@@ -33,6 +33,12 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
+      <Image
+        source={{
+          uri:
+            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Screen_Shot_2020-11-01_at_6.47.24_PM_OCAchKu.png"
+        }}
+      />
       <TextInput
         placeholder="First Name"
         value={this.state.TextInput_7}
@@ -73,7 +79,16 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
+  TextInput_7: {},
+  TextInput_9: {},
+  TextInput_3: {},
+  TextInput_5: {},
+  CheckBox_11: {},
+  Button_13: { height: -18, color: "#ffffff" },
+  View_1: {},
+  Image_18: {},
   TextInput_7: {},
   TextInput_9: {},
   TextInput_3: {},
