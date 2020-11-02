@@ -44,13 +44,13 @@ export default class Blank extends React.Component {
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
       <TextInput
-        placeholder="Expiration Month"
+        placeholder="Expiration Month (MM)"
         style={styles.TextInput_12}
         value={this.state.TextInput_12}
         onChangeText={nextValue => this.setState({ TextInput_12: nextValue })}
       />
       <TextInput
-        placeholder="Expiration Year"
+        placeholder="Expiration Year (YYYY)"
         style={styles.TextInput_22}
         value={this.state.TextInput_22}
         onChangeText={nextValue => this.setState({ TextInput_22: nextValue })}
@@ -80,6 +80,13 @@ const styles = StyleSheet.create({
   TextInput_3: {},
   TextInput_5: {},
   TextInput_7: {},
+  View_1: {},
+  TextInput_3: {},
+  TextInput_5: {},
+  TextInput_12: { paddingLeft: 0, paddingRight: 0 },
+  TextInput_22: { paddingLeft: 0, paddingRight: 0 },
+  TextInput_7: {},
+  Button_24: { color: "#ffffff" },
   View_1: {},
   TextInput_3: {},
   TextInput_5: {},
