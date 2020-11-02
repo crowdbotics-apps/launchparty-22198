@@ -27,8 +27,12 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View>
-      <Text style={styles.Text_29}>Welcome!</Text>
-      <Image />
+      <Image
+        source={{
+          uri:
+            "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Screen_Shot_2020-11-01_at_6.47.24_PM.png"
+        }}
+      />
       <TextInput
         placeholder="Username"
         value={this.state.TextInput_3}
@@ -62,6 +66,11 @@ const styles = StyleSheet.create({
   TextInput_33: {},
   View_1: {},
   Text_29: { alignSelf: "center" },
+  Image_30: {},
+  TextInput_3: {},
+  TextInput_33: {},
+  Button_35: { color: "#ffffff" },
+  View_1: {},
   Image_30: {},
   TextInput_3: {},
   TextInput_33: {},
