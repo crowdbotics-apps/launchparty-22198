@@ -66,7 +66,6 @@ export default class Blank extends React.Component {
         style={styles.Button_24}
         onPress={() => alert("Pressed!")}
       />
-      <Button title="Press me!" onPress={() => alert("Pressed!")} />
     </View>
   )
 }
@@ -102,5 +101,12 @@ const styles = StyleSheet.create({
   TextInput_22: { paddingLeft: 0, paddingRight: 0 },
   TextInput_7: {},
   Button_24: { color: "#ffffff" },
-  Button_26: {}
+  Button_26: {},
+  View_1: {},
+  TextInput_3: {},
+  TextInput_5: {},
+  TextInput_12: { paddingLeft: 0, paddingRight: 0 },
+  TextInput_22: { paddingLeft: 0, paddingRight: 0 },
+  TextInput_7: {},
+  Button_24: { color: "#ffffff" }
 })
