@@ -23,7 +23,13 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = { TextInput_3: "", TextInput_5: "", TextInput_7: "" }
+  state = {
+    TextInput_3: "",
+    TextInput_5: "",
+    TextInput_12: "",
+    TextInput_22: "",
+    TextInput_7: ""
+  }
 
   render = () => (
     <View>
@@ -38,9 +44,27 @@ export default class Blank extends React.Component {
         onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
       />
       <TextInput
+        placeholder="Expiration Month"
+        style={styles.TextInput_12}
+        value={this.state.TextInput_12}
+        onChangeText={nextValue => this.setState({ TextInput_12: nextValue })}
+      />
+      <TextInput
+        placeholder="Expiration Year"
+        style={styles.TextInput_22}
+        value={this.state.TextInput_22}
+        onChangeText={nextValue => this.setState({ TextInput_22: nextValue })}
+      />
+      <TextInput
         placeholder="CVC Code"
         value={this.state.TextInput_7}
         onChangeText={nextValue => this.setState({ TextInput_7: nextValue })}
+      />
+      <Button
+        title="Purchase"
+        color="#33f1ff"
+        style={styles.Button_24}
+        onPress={() => alert("Pressed!")}
       />
     </View>
   )
@@ -51,8 +75,16 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
   TextInput_3: {},
   TextInput_5: {},
-  TextInput_7: {}
+  TextInput_7: {},
+  View_1: {},
+  TextInput_3: {},
+  TextInput_5: {},
+  TextInput_12: { paddingLeft: 0, paddingRight: 0 },
+  TextInput_22: { paddingLeft: 0, paddingRight: 0 },
+  TextInput_7: {},
+  Button_24: { color: "#ffffff" }
 })
